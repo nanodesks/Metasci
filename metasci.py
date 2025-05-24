@@ -19,7 +19,7 @@ print("[This saves to METASCI-logs.txt]")
 print()
 print(file=z)
 def version():
-    title =  usr + "" + " " + "" + ">>> I.S. (Incubator Studios) Outbeat Produce: Metasci-1.1 'pocket uni-verse' by A.A.P.L. - Established Lpro.py (Life-pro) and Destiny [2024]"
+    title =  usr + "" + " " + "" + ">>> I.S. (Incubator Studios) Outbeat Produce: Metasci-1.1.2 'pocket uni-verse' by A.A.P.L. - Established Lpro.py (Life-pro) and Destiny [2024]"
     title2 = "| Indicative: @USVirtualUni && © Medicine, Computable (N_2025) |"
     title3 = " All Rights Reserved - Medicci.ca -"
     cdt = datetime.datetime.now()
@@ -123,7 +123,7 @@ def commands():
     print()
     print(" version | [blank input] for nano | profile | note / journal / save | search")
     print()
-    print(" | call, message [lh], [echo], [fuzz], alerts, light incense, prayer, dhammapada, message-scan [scan], ascii, ascii search [ascsearch/asc], archery, value, tag / atag, map, monitor-start [mstart], acad-monitor (astart), weapon start [wstart], oscillator [oscill], Medicals (M), Earth Science (SCI), psychology (psyc), Patient Simu, biology (B), chemistry (ch), legal terms (Law), change username [username/user], print time, (ai) auto-mat [AAM], [ID / IDC], the heart sutra, herbs/herbals, degree/major, MedProc AI [MAI], frames [fps], frames search [fsearch], police (prad), burner-start [burn], KIOMAI [kiomai], CAI Environments (CAI/GES), amror (meditation game), amror-search [amsearch], time-monitor [tmonitor]") 
+    print(" | call, message [lh], [echo], [fuzz], alerts, light incense, prayer, dhammapada, message-scan [scan], ascii, ascii search [ascsearch/asc], archery, value, tag / atag, map, monitor-start [mstart], acad-monitor (astart), weapon start [wstart], oscillator [oscill], Medicals (M), Earth Science (SCI), psychology (psyc), Patient Simu, biology (B), chemistry (ch), legal terms (Law), change username [username/user], print time, (ai) auto-mat [AAM], [ID / IDC], the heart sutra, herbs/herbals, degree/major, MedProc AI [MAI], frames [fps], frames search [fsearch], police (prad), burner-start [burn], KIOMAI [kiomai], CAI Environments (CAI/GES), amror (meditation game), amror-search [amsearch], time-monitor [tmonitor], speech-time-monitor [stmonitor]") 
     print()
     print(" | pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, skate, art, give alms, radio, hack, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, karate, koans, equips, rpg, color key, doodling, BUMP, MA, Magic, zen melody, monopoly, stats, progress, collections, football, c, entry, posting, koran, heBrews, Clearance, MiCasa, stuff, worship, License, climb, teletubby, {[muslim prayer] fajr (before dawn) / dhuhr (noon) / asr (late afternoon) / maghrib (at sunset) / isha (nighttime)}, monitor-search [msearch], acad-search [asearch]")
 
@@ -2511,6 +2511,65 @@ def time_monitor():
         except KeyboardInterrupt:
             print("\nStopped by user.")
 
+def s_time_monitor():
+    maroon = "^m^"
+    nano = (diction)
+    acad = (acadlist)
+    title = input("t-monitor name: ")
+    while True:
+        try:
+            buffer = int(input("time-buffer in seconds: "))
+        except ValueError:
+            print("Invalid value")
+        else:
+            break
+    buffer
+    t = open("t-monitor-logs.txt", "a", buffering=1)
+    ct = datetime.datetime.now()
+    monitor = "time-monitor-start:"
+    print(usr, monitor, title, ct)
+    print(usr, monitor, title, ct, file=z)
+    print(usr, monitor, title, ct, file=t)
+    print()
+    print(file=z)
+    print("*this saves to t-monitor-logs.txt* Ctrl+C to stop")
+    print()
+    print(file=t)
+    def generate_random_result():
+        time.sleep(buffer)
+        ctm = datetime.datetime.now()
+        def generate_random_letters():
+            random1 = random.choice(string.ascii_letters)
+            random2 = random.choice(string.ascii_letters)
+            random3 = random.choice(string.ascii_letters)
+            letters = [random1, random2, random3]
+            random.shuffle(letters)
+            return letters
+        random_letters = generate_random_letters()
+        sitch  = (round(random.random()*9999,4))
+        kchat = random.sample(nano, random.randint(1,7))
+        kchat2 = random.sample(acad, random.randint(1,7))
+        print(maroon, random_letters, sitch, kchat, kchat2, ctm)
+        print(maroon, random_letters, sitch, kchat, kchat2, ctm, file=t)
+        print("_______________________________________")
+        print("_______________________________________", file=t)
+        random_result = [random.choice(nano)]
+        result_text = ", ".join(random_result)
+        speak(result_text)
+        print()
+        print(file=t)
+
+
+    def main_loop():
+        while True:
+            generate_random_result()
+    
+    if __name__ == "__main__":
+        try:
+            main_loop()
+        except KeyboardInterrupt:
+            print("\nStopped by user.")
+
 def msgs():
     while True:
         try:
@@ -4037,8 +4096,11 @@ def choice():
         if choice == "acad-monitor" or choice == "astart":
             acad_monitor()
 
-        if choice == "time monitor" or choice == "time-moitor" or choice == "tmonitor" or choice == "t-monitor" or choice == "tm":
+        if choice == "time monitor" or choice == "time-monitor" or choice == "tmonitor" or choice == "t-monitor" or choice == "tm":
             time_monitor()
+
+        if choice == "speech time monitor" or choice == "speech-time-monitor" or choice == "speech time-monitor" or choice == "speech tmonitor" or choice == "stmonitor":
+            s_time_monitor()
 
         if choice == "acad-search" or choice == "asearch":
             asearch()
