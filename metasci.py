@@ -19,7 +19,7 @@ print("[This saves to METASCI-logs.txt]")
 print()
 print(file=z)
 def version():
-    title =  usr + "" + " " + "" + ">>> I.S. (Incubator Studios) Outbeat Produce: Metasci-1.1.2 'pocket uni-verse' by A.A.P.L. - Established Lpro.py (Life-pro) and Destiny [2024]"
+    title =  usr + "" + " " + "" + ">>> I.S. (Incubator Studios) Outbeat Produce: Metasci-1.3.0.1 'pocket uni-verse' by A.A.P.L. - Established Lpro.py (Life-pro) and Destiny [2024]"
     title2 = "| Indicative: @USVirtualUni && © Medicine, Computable (N_2025) |"
     title3 = " All Rights Reserved - Medicci.ca -"
     cdt = datetime.datetime.now()
@@ -123,7 +123,7 @@ def commands():
     print()
     print(" version | [blank input] for nano | profile | note / journal / save | search")
     print()
-    print(" | call, message [lh], [echo], [fuzz], alerts, light incense, prayer, dhammapada, message-scan [scan], ascii, ascii search [ascsearch/asc], archery, value, tag / atag, map, monitor-start [mstart], acad-monitor (astart), weapon start [wstart], oscillator [oscill], Medicals (M), Earth Science (SCI), psychology (psyc), Patient Simu, biology (B), chemistry (ch), legal terms (Law), change username [username/user], print time, (ai) auto-mat [AAM], [ID / IDC], the heart sutra, herbs/herbals, degree/major, MedProc AI [MAI], frames [fps], frames search [fsearch], police (prad), burner-start [burn], KIOMAI [kiomai], CAI Environments (CAI/GES), amror (meditation game), amror-search [amsearch], time-monitor [tmonitor], speech-time-monitor [stmonitor]") 
+    print(" | call, message [lh], [echo], [fuzz], alerts, light incense, prayer, dhammapada, message-scan [scan], ascii [double space], ascii search [ascsearch/asc], archery, value, tag / atag, map, monitor-start [mstart], acad-monitor (astart), weapon start [wstart], oscillator [oscill], Medicals (M), Earth Science (SCI), psychology (psyc), Patient Simu, biology (B), chemistry (ch), legal terms (Law), change username [username/user], print time, (ai) auto-mat [AAM], [ID / IDC], the heart sutra, herbs/herbals, degree/major, MedProc AI [MAI], frames [fps], frames search [fsearch], police (prad), burner-start [burn], KIOMAI [kiomai], CAI Environments (CAI/GES), amror (meditation game), amror-search [amsearch], time-monitor [tmonitor], speech-time-monitor [stmonitor]") 
     print()
     print(" | pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, skate, art, give alms, radio, hack, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, karate, koans, equips, rpg, color key, doodling, BUMP, MA, Magic, zen melody, monopoly, stats, progress, collections, football, c, entry, posting, koran, heBrews, Clearance, MiCasa, stuff, worship, License, climb, teletubby, {[muslim prayer] fajr (before dawn) / dhuhr (noon) / asr (late afternoon) / maghrib (at sunset) / isha (nighttime)}, monitor-search [msearch], acad-search [asearch]")
 
@@ -4036,7 +4036,7 @@ def choice():
         if choice == "c":
             c()
 
-        if choice == "ascii":
+        if choice == "ascii" or choice == "  ":
             asciii()
 
         if choice == "ascii search" or choice == "ascsearch" or choice == "asc search" or choice =="asc":
