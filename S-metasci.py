@@ -15,7 +15,7 @@ medicci = "^m^"
 set_usr(medicci + "" + " " + "" + "[" + "" + new + "" + "]" + "" + " " + "" + "$" + "" + " ")
 print()
 def version():
-    title =  usr + "" + " " + "" + ">>> I.S. (Incubator Studios) Outbeat Produce: Metasci-1.1.2-S 'pocket uni-verse' by A.A.P.L. - Established Lpro.py (Life-pro) and Destiny [2024]"
+    title =  usr + "" + " " + "" + ">>> I.S. (Incubator Studios) Outbeat Produce: Metasci-1.4.0.1-S 'pocket uni-verse' by A.A.P.L. - Established Lpro.py (Life-pro) and Destiny [2024]"
     title2 = "| Indicative: @USVirtualUni && © Medicine, Computable (N_2025) |"
     title3 = " All Rights Reserved - Medicci.ca -"
     cdt = datetime.datetime.now()
@@ -113,7 +113,7 @@ def commands():
     print(" version | [blank input] for nano | profile")
 
     print()
-    print(" | call, message [lh], [echo], [fuzz], alerts, light incense, prayer, dhammapada, message-scan [scan], ascii, archery, value, tag / atag, map, monitor-start [mstart], acad-monitor (astart), weapon start [wstart], oscillator [oscill], Medicals (M), Earth Science (SCI), psychology (psyc), Patient Simu, biology (B), chemistry (ch), legal terms (Law), change username [username/user], print time, (ai) auto-mat [AAM], [ID / IDC], the heart sutra, herbs/herbals, degree/major, MedProc AI [MAI], frames [fps], police (prad), burner-start [burn], KIOMAI [kiomai], CAI Environments (CAI/GES), time-monitor [tmonitor], speech-time-monitor [stmonitor]")
+    print(" | call, message [lh], [echo], [fuzz], alerts, light incense, prayer, dhammapada, message-scan [scan], ascii, archery, value, tag / atag, map, monitor-start [mstart], acad-monitor (astart), weapon start [wstart], oscillator [oscill], Medicals (M), Earth Science (SCI), psychology (psyc), Patient Simu, biology (B), chemistry (ch), legal terms (Law), change username [username/user], print time, (ai) auto-mat [AAM], [ID / IDC], the heart sutra, herbs/herbals, degree/major, MedProc AI [MAI], frames [fps], police (prad), burner-start [burn], KIOMAI [kiomai], CAI Environments (CAI/GES), time-monitor [tmonitor], speech-time-monitor [stmonitor], guard")
     print()
     print(" | pray, sleep, eat, meditate, draw card, slot, find coins, search for items, fly, drink coffee, drink tea, surf, skate, art, give alms, radio, hack, brawl, souls, hipster tarot, mp3, spar, train, rest, psalms, haiku, karate, koans, equips, rpg, color key, doodling, BUMP, MA, Magic, zen melody, monopoly, stats, progress, collections, football, c, entry, posting, koran, heBrews, Clearance, MiCasa, stuff, worship, License, climb, teletubby, {[muslim prayer] fajr (before dawn) / dhuhr (noon) / asr (late afternoon) / maghrib (at sunset) / isha (nighttime)}")
 
@@ -2363,6 +2363,71 @@ def kiomai():
         except KeyboardInterrupt:
             print("\nStopped by user.")
 
+def guard():
+    while True:
+        try:
+            fps = float(input("Indicate speed in (halfed) seconds: "))
+        except ValueError:
+            print("Invalid value")
+        else:
+            break
+    name = input("guard_name: ")
+    fps
+    print()
+    print("Ctrl+C to stop")
+    time.sleep(3.5)
+    def generate_random_result():
+        time.sleep(fps)
+        ctm = datetime.datetime.now()
+        def generate_random_letters():
+            random1 = random.choice(string.ascii_letters)
+            random2 = random.choice(string.ascii_letters)
+            random3 = random.choice(string.ascii_letters)
+            letters = [random1, random2, random3]
+            random.shuffle(letters)
+            return letters
+        random_letters = generate_random_letters()
+        sitch  = (round(random.random()*9999,4))
+        asc = "guard:"
+        print()
+        print(asc, usr, name, random_letters, sitch, ctm)
+        pr1 = (round(random.random()*99999999999999999999999999999999999999999))
+        pr2 = (round(random.random()*99999999999999999999999999999999999999999))
+        pr3 = (round(random.random()*99999999999999999999999999999999999999999))
+        pr4 = (round(random.random()*99999999999999999999999999999999999999999))
+        pr5 = (round(random.random()*99999999999999999999999999999999999999999))
+        pr6 = (round(random.random()*99999999999999999999999999999999999999999))
+        pr7 = (round(random.random()*99999999999999999999999999999999999999999))
+        pr8 = (round(random.random()*99999999999999999999999999999999999999999))
+        pr9 = (round(random.random()*99999999999999999999999999999999999999999))
+        pr10 = (round(random.random()*99999999999999999999999999999999999999999))
+        pr11 = (round(random.random()*99999999999999999999999999999999999999999))
+        pr12 = (round(random.random()*99999999999999999999999999999999999999999))
+        print()
+        print(pr1)
+        print(pr2)
+        print(pr3)
+        print(pr4)
+        print(pr5)
+        print(pr6)
+        print(pr7)
+        print(pr8)
+        print(pr9)
+        print(pr10)
+        print(pr11)
+        print(pr12)
+        print()
+
+    def main_loop():
+        while True:
+            generate_random_result()
+
+    if __name__ == "__main__":
+        try:
+            main_loop()
+        except KeyboardInterrupt:
+            print("\nStopped by user.")
+
 def frames():
     while True:
         try:
@@ -2726,10 +2791,13 @@ def choice():
         if choice == "souls":
             souls()
 
+        if choice == "guard" or choice == "guards":
+            guard()
+
         if choice == "c":
             c()
 
-        if choice == "ascii":
+        if choice == "ascii" or choice == "  ":
             asciii()
 
         if choice == "mp3":
