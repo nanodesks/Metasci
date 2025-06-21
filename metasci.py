@@ -19,7 +19,7 @@ print("[This saves to METASCI-logs.txt]")
 print()
 print(file=z)
 def version():
-    title =  usr + "" + " " + "" + ">>> I.S. (Incubator Studios) Outbeat Produce: Metasci-1.4.0.1 'pocket uni-verse' by A.A.P.L. - Established Lpro.py (Life-pro) and Destiny [2024]"
+    title =  usr + "" + " " + "" + ">>> I.S. (Incubator Studios) Outbeat Produce: Metasci-1.4.1.0 'pocket uni-verse' by A.A.P.L. - Established Lpro.py (Life-pro) and Destiny [2024]"
     title2 = "| Indicative: @USVirtualUni && © Medicine, Computable (N_2025) |"
     title3 = " All Rights Reserved - Medicci.ca -"
     cdt = datetime.datetime.now()
@@ -235,7 +235,7 @@ def search():
     zen = input("Search: ")
     print()
     print(file=z)
-    with open(r"DESTINY-logs.txt", 'r') as fp:
+    with open(r"METASCI-logs.txt", 'r') as fp:
         for l_no, line in enumerate(fp):
             # search string
             if zen in line:
@@ -1965,11 +1965,11 @@ def ascsearch():
     zen = input("(ascii) search: ")
     print()
     try:
-        with open(r"DESTINY-logs.txt", 'r') as fp:
+        with open(r"METASCI-logs.txt", 'r') as fp:
             for line_no, line in enumerate(fp):
                 if zen in line:
                     print(line.strip())
-                    fp_temp = open(r"DESTINY-logs.txt", 'r')
+                    fp_temp = open(r"METASCI-logs.txt", 'r')
                     count = 0
                     for temp_line_no, temp_line in enumerate(fp_temp):
                         if temp_line_no > line_no and count < 14:
@@ -1978,7 +1978,7 @@ def ascsearch():
                     fp_temp.close()
                     print()
     except FileNotFoundError:
-        print("Error: File 'DESTINY-logs.txt' not found.")
+        print("Error: File 'METASCI-logs.txt' not found.")
     except Exception as e:
         print(f"An error occurred: {e}")
 
