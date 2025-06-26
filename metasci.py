@@ -19,7 +19,7 @@ print("[This saves to METASCI-logs.txt]")
 print()
 print(file=z)
 def version():
-    title =  usr + "" + " " + "" + ">>> I.S. (Incubator Studios) Outbeat Produce: Metasci-1.4.1.0 'pocket uni-verse' by A.A.P.L. - Established Lpro.py (Life-pro) and Destiny [2024]"
+    title =  usr + "" + " " + "" + ">>> I.S. (Incubator Studios) Outbeat Produce: Metasci-1.4.2.2 'pocket uni-verse' by A.A.P.L. - Established Lpro.py (Life-pro) and Destiny [2024]"
     title2 = "| Indicative: @USVirtualUni && © Medicine, Computable (N_2025) |"
     title3 = " All Rights Reserved - Medicci.ca -"
     cdt = datetime.datetime.now()
@@ -130,8 +130,8 @@ def commands():
 def GES():
     print()
     print(file=z)
-    print("Crown | ART | Birth Snapshot | YzB | Thailand Hospital | egg | Zen Meditation (USVU) | Shinobi Primer | Hacking 101 @m0nkrpg | Saler | 445 | First Office Salute | Poker Table | chi_a |")
-    print("Crown | ART | Birth Snapshot | YzB | Thailand Hospital | egg | Zen Meditation (USVU) | Shinobi Primer | Hacking 101 @m0nkrpg | Saler | 445 | First Office Salute | Poker Table | chi_a |", file=z)
+    print("Crown | ART | Birth Snapshot | YzB | Thailand Hospital | egg | Zen Meditation (USVU) | Shinobi Primer | Hacking 101 @m0nkrpg | Saler | 445 | First Office Salute | Poker Table | chi_a | med_apteu #proc #music")
+    print("Crown | ART | Birth Snapshot | YzB | Thailand Hospital | egg | Zen Meditation (USVU) | Shinobi Primer | Hacking 101 @m0nkrpg | Saler | 445 | First Office Salute | Poker Table | chi_a | med_apteu #proc #music", file=z)
 
 def print_time():
     t_time = datetime.datetime.now()
