@@ -15,7 +15,7 @@ medicci = "^m^"
 set_usr(medicci + "" + " " + "" + "[" + "" + new + "" + "]" + "" + " " + "" + "$" + "" + " ")
 print()
 def version():
-    title =  usr + "" + " " + "" + ">>> I.S. (Incubator Studios) Outbeat Produce: Metasci-1.4.2.0-S 'pocket uni-verse' by A.A.P.L. - Established Lpro.py (Life-pro) and Destiny [2024]"
+    title =  usr + "" + " " + "" + ">>> I.S. (Incubator Studios) Outbeat Produce: Metasci-1.5.0.1-S 'pocket uni-verse' by A.A.P.L. - Established Lpro.py (Life-pro) and Destiny [2024]"
     title2 = "| Indicative: @USVirtualUni && © Medicine, Computable (N_2025) |"
     title3 = " All Rights Reserved - Medicci.ca -"
     cdt = datetime.datetime.now()
@@ -110,7 +110,7 @@ acadlist = ["inconsistency", "analyse", "analysis", "analyst", "analytic", "anal
 
 def commands():
     print()
-    print(" version | [blank input] for nano | profile")
+    print(" version | [blank input] for nano | profile | fsearch")
 
     print()
     print(" | call, message [lh], [echo], [fuzz], alerts, light incense, prayer, dhammapada, message-scan [scan], ascii, archery, value, tag / atag, map, monitor-start [mstart], acad-monitor (astart), weapon start [wstart], oscillator [oscill], Medicals (M), Earth Science (SCI), psychology (psyc), Patient Simu, biology (B), chemistry (ch), legal terms (Law), change username [username/user], print time, (ai) auto-mat [AAM], [ID / IDC], the heart sutra, herbs/herbals, degree/major, MedProc AI [MAI], frames [fps], police (prad), burner-start [burn], KIOMAI [kiomai], CAI Environments (CAI/GES), time-monitor [tmonitor], speech-time-monitor [stmonitor], guard")
@@ -133,6 +133,17 @@ def change_username():
     new = input("Session username: ")
     set_usr("^m^" + "" + " " + "" + "[" + "" + new + "" + "]" + "" + " " + "" + "$" + "" + " ")
     ct = datetime.datetime.now()
+
+def search():
+    zen = input("Search: ")
+    print()
+    with open(r"METASCI-logs.txt", 'r') as fp:
+        for l_no, line in enumerate(fp):
+            # search string
+            if zen in line:
+                print(zen + "" + ' found')
+                print('Line Number:', l_no)
+                print('Line:', line)
 
 def profile():
     print()
@@ -2885,6 +2896,9 @@ def choice():
 
         if choice == "burner-start" or choice == "burner start" or choice == "burner" or choice == "burn" or choice == "Burn":
             burner()
+
+        if choice == 'search' or choice == 'fsearch':
+            search()
 
 chooseAgain = "yes"
 while chooseAgain:
