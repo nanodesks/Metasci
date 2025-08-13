@@ -1,3 +1,5 @@
+update: Newly discovered info about running metasci.py on more modern mobile phones (as with my new one acquired on my birthday, a Samsung): if espeak (dependency) doesnt work you can use termux-tts-speech by downloading both termux-api and termux from F-Droid, and some minor code change.
+
 # Metasci
 WEB-APP : https://nanodesks.pyscriptapps.com/metasci/latest
 
